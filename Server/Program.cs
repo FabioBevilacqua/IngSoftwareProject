@@ -1,3 +1,5 @@
+using ProgettoIDS.Midlleware;
+
 var builder = WebApplication.CreateBuilder(args);
 
 //Qui definisco il DatabaseContext globale, da poter iniettare per DependencyInjection
@@ -9,6 +11,7 @@ builder.Services.AddSwaggerGen();
 var app = builder.Build();
 
 
+app.UseMiddleware(typeof(ExceptionHandlingMiddleware));
 app.UseSwagger();
 app.UseSwaggerUI();
 
