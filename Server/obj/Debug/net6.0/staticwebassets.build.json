@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "bqGSuoEexBTAoS+iL9wuFOgMgMlP9EIVaxaSYvyiYNM=",
+  "Source": "ProgettoIDS",
+  "BasePath": "_content/ProgettoIDS",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ProgettoIDS\\wwwroot",
+      "Source": "ProgettoIDS",
+      "ContentRoot": "C:\\Users\\Daniele\\Source\\Repos\\IngSoftwareProject\\Server\\wwwroot\\",
+      "BasePath": "_content/ProgettoIDS",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Daniele\\Source\\Repos\\IngSoftwareProject\\Server\\wwwroot\\index.html",
+      "SourceId": "ProgettoIDS",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Daniele\\Source\\Repos\\IngSoftwareProject\\Server\\wwwroot\\",
+      "BasePath": "_content/ProgettoIDS",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ]
+}
