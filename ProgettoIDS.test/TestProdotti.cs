@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using System;
 using Newtonsoft.Json;
 using System.Text;
+using System.Net;
 
 namespace ProgettoIDS.test
 {
@@ -39,14 +40,14 @@ namespace ProgettoIDS.test
             var json = JsonConvert.SerializeObject(prodotto);
             var data = new StringContent(json, Encoding.UTF8, "application/json");
             var response = await this.httpClient.PostAsync("api/prodotto", data);
-            Assert.AreEqual(200, response.StatusCode);
+            Assert.AreEqual(HttpStatusCode.OK, response.StatusCode);
         }
 
         [Test]
         public async Task TestParametroNonValido()
         {
             var response = await this.httpClient.GetAsync("api/prodotto/GetById?id=-1");
-            Assert.AreEqual(400, response.StatusCode);
+            Assert.AreEqual(HttpStatusCode.BadRequest, response.StatusCode);
         }
 
 
@@ -54,7 +55,7 @@ namespace ProgettoIDS.test
         public async Task TestParametroValido()
         {
             var response = await this.httpClient.GetAsync("api/prodotto/GetById?id=1");
-            Assert.AreEqual(200, response.StatusCode);
+            Assert.AreEqual(HttpStatusCode.OK, response.StatusCode);
         }
     }
 }
