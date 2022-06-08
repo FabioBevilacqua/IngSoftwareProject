@@ -5,7 +5,7 @@
 namespace ProgettoIDS.Controllers;
 
 [ApiController]
-[Route("[controller]")]
+[Route("api/[controller]")]
 public class ProdottoController : ControllerBase
 {
     private readonly DatabaseContext context;
@@ -35,19 +35,19 @@ public class ProdottoController : ControllerBase
         var prodottoFindend = await context.Prodotti.AnyAsync(item => item.Deleted_At == null && item.Descrizione.ToLower() == prodotto.Descrizione.ToLower());
         if (prodottoFindend)
         {
-            return BadRequest("Attenzione, esiste già un prodotto con la stessa descrizione");
+            return BadRequest("Attenzione, esiste giï¿½ un prodotto con la stessa descrizione");
         }
         if (prodotto.Id != 0)
         {
-            return BadRequest("Attenzione, la chiave univoca del prodotto può essere inserità solo dal database");
+            return BadRequest("Attenzione, la chiave univoca del prodotto puï¿½ essere inseritï¿½ solo dal database");
         }
         if (prodotto.Quantita <= 0)
         {
-            return BadRequest("Attenzione, la quantità non può essere uguale o minore di 0");
+            return BadRequest("Attenzione, la quantitï¿½ non puï¿½ essere uguale o minore di 0");
         }
         if (prodotto.Deleted_At != null)
         {
-            return BadRequest("Attenzione, non è possibile salvare ed elimnare contestualmente un prodotto ");
+            return BadRequest("Attenzione, non ï¿½ possibile salvare ed elimnare contestualmente un prodotto ");
         }
         try
         {
