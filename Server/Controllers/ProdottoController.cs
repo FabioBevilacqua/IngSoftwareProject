@@ -19,35 +19,44 @@ public class ProdottoController : ControllerBase
     public async Task<IActionResult> Get()
     {
         var prodotti = await context.Prodotti.Where(item => item.Deleted_At == null).ToListAsync();
-        return Ok(prodotti);
+        return StatusCode(200,prodotti);
     }
 
     [HttpGet("GetById")]
     public async Task<IActionResult> GetById(int id)
     {
         var prodotto = await context.Prodotti.FirstOrDefaultAsync(item => item.Deleted_At == null && item.Id == id);
-        return Ok(prodotto);
+        if (id < 0){
+            return StatusCode(400,"Attenzione, valore non valido");
+        }
+        if (prodotto == null){
+            return StatusCode(404,"Prodotto inesistente");
+        }
+        if (id == 0){
+            return StatusCode(400,"Attenzione, parametro id non inserito o uguale a 0");
+        }
+        return StatusCode(200,prodotto);
     }
 
     [HttpPost]
-    public async Task<IActionResult> GetById(Prodotto prodotto)
+    public async Task<IActionResult> Post(Prodotto prodotto)
     {
         var prodottoFindend = await context.Prodotti.AnyAsync(item => item.Deleted_At == null && item.Descrizione.ToLower() == prodotto.Descrizione.ToLower());
         if (prodottoFindend)
         {
-            return BadRequest("Attenzione, esiste gi� un prodotto con la stessa descrizione");
+            return StatusCode(400,"Attenzione, esiste gi� un prodotto con la stessa descrizione");
         }
         if (prodotto.Id != 0)
         {
-            return BadRequest("Attenzione, la chiave univoca del prodotto pu� essere inserit� solo dal database");
+            return StatusCode(400,"Attenzione, la chiave univoca del prodotto pu� essere inserit� solo dal database");
         }
         if (prodotto.Quantita <= 0)
         {
-            return BadRequest("Attenzione, la quantit� non pu� essere uguale o minore di 0");
+            return StatusCode(400,"Attenzione, la quantit� non pu� essere uguale o minore di 0");
         }
         if (prodotto.Deleted_At != null)
         {
-            return BadRequest("Attenzione, non � possibile salvare ed elimnare contestualmente un prodotto ");
+            return StatusCode(400,"Attenzione, non � possibile salvare ed elimnare contestualmente un prodotto ");
         }
         try
         {
@@ -56,7 +65,7 @@ public class ProdottoController : ControllerBase
             await this.context.SaveChangesAsync();
             await this.context.Database.CommitTransactionAsync();
 
-            return Ok(inserted.Entity.Id);
+            return StatusCode(200,inserted.Entity.Id);
         }
         catch (Exception e)
         {
@@ -77,7 +86,7 @@ public class ProdottoController : ControllerBase
                 prodottoFindend.Deleted_At = DateTime.Now;
                 await this.context.SaveChangesAsync();
                 await this.context.Database.CommitTransactionAsync();
-                return Ok();
+                return StatusCode(200);
             }
             catch (Exception e)
             {
@@ -87,7 +96,7 @@ public class ProdottoController : ControllerBase
         }
         else
         {
-            return NotFound("Prodotto inesistente");
+            return StatusCode(404,"Prodotto inesistente");
         }
     }
 }

@@ -1724,11 +1724,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Fabio\\Desktop\\Universita\\Ing. Software\\IngSoftwareProject\\IngSoftwareProject\\Server\\ProgettoIDS.csproj",
+      "projectUniqueName": "c:\\Users\\Fabio\\Desktop\\Universita\\Ing. Software\\IngSoftwareProject\\IngSoftwareProject\\Server\\ProgettoIDS.csproj",
       "projectName": "ProgettoIDS",
-      "projectPath": "C:\\Users\\Fabio\\Desktop\\Universita\\Ing. Software\\IngSoftwareProject\\IngSoftwareProject\\Server\\ProgettoIDS.csproj",
+      "projectPath": "c:\\Users\\Fabio\\Desktop\\Universita\\Ing. Software\\IngSoftwareProject\\IngSoftwareProject\\Server\\ProgettoIDS.csproj",
       "packagesPath": "C:\\Users\\Fabio\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Fabio\\Desktop\\Universita\\Ing. Software\\IngSoftwareProject\\IngSoftwareProject\\Server\\obj\\",
+      "outputPath": "c:\\Users\\Fabio\\Desktop\\Universita\\Ing. Software\\IngSoftwareProject\\IngSoftwareProject\\Server\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Fabio\\AppData\\Roaming\\NuGet\\NuGet.Config",
