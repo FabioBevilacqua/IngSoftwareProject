@@ -10,8 +10,9 @@ namespace ProgettoIDS.test
 {
     public class TestProdotti
     {
-        private readonly string base_address = "https://idsfabio.azurewebsites.net";
+        private readonly string base_address = "https://ingsoftwareproject.azurewebsites.net/";
         private HttpClient httpClient;
+
         [SetUp]
         public void Setup()
         {

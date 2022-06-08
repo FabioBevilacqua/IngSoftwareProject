@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Daniele\\Source\\Repos\\IngSoftwareProject\\ProgettoIDS.test\\ProgettoIDS.test.csproj": {}
+    "C:\\Users\\Fabio\\Desktop\\Universita\\Ing. Software\\IngSoftwareProject\\IngSoftwareProject\\ProgettoIDS.test\\ProgettoIDS.test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Daniele\\Source\\Repos\\IngSoftwareProject\\Models\\Models.csproj": {
+    "C:\\Users\\Fabio\\Desktop\\Universita\\Ing. Software\\IngSoftwareProject\\IngSoftwareProject\\Models\\Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Daniele\\Source\\Repos\\IngSoftwareProject\\Models\\Models.csproj",
+        "projectUniqueName": "C:\\Users\\Fabio\\Desktop\\Universita\\Ing. Software\\IngSoftwareProject\\IngSoftwareProject\\Models\\Models.csproj",
         "projectName": "Models",
-        "projectPath": "C:\\Users\\Daniele\\Source\\Repos\\IngSoftwareProject\\Models\\Models.csproj",
-        "packagesPath": "C:\\Users\\Daniele\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Daniele\\Source\\Repos\\IngSoftwareProject\\Models\\obj\\",
+        "projectPath": "C:\\Users\\Fabio\\Desktop\\Universita\\Ing. Software\\IngSoftwareProject\\IngSoftwareProject\\Models\\Models.csproj",
+        "packagesPath": "C:\\Users\\Fabio\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Fabio\\Desktop\\Universita\\Ing. Software\\IngSoftwareProject\\IngSoftwareProject\\Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Daniele\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Fabio\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -54,21 +54,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Daniele\\Source\\Repos\\IngSoftwareProject\\ProgettoIDS.test\\ProgettoIDS.test.csproj": {
+    "C:\\Users\\Fabio\\Desktop\\Universita\\Ing. Software\\IngSoftwareProject\\IngSoftwareProject\\ProgettoIDS.test\\ProgettoIDS.test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Daniele\\Source\\Repos\\IngSoftwareProject\\ProgettoIDS.test\\ProgettoIDS.test.csproj",
+        "projectUniqueName": "C:\\Users\\Fabio\\Desktop\\Universita\\Ing. Software\\IngSoftwareProject\\IngSoftwareProject\\ProgettoIDS.test\\ProgettoIDS.test.csproj",
         "projectName": "ProgettoIDS.test",
-        "projectPath": "C:\\Users\\Daniele\\Source\\Repos\\IngSoftwareProject\\ProgettoIDS.test\\ProgettoIDS.test.csproj",
-        "packagesPath": "C:\\Users\\Daniele\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Daniele\\Source\\Repos\\IngSoftwareProject\\ProgettoIDS.test\\obj\\",
+        "projectPath": "C:\\Users\\Fabio\\Desktop\\Universita\\Ing. Software\\IngSoftwareProject\\IngSoftwareProject\\ProgettoIDS.test\\ProgettoIDS.test.csproj",
+        "packagesPath": "C:\\Users\\Fabio\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Fabio\\Desktop\\Universita\\Ing. Software\\IngSoftwareProject\\IngSoftwareProject\\ProgettoIDS.test\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Daniele\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Fabio\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -82,11 +82,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Daniele\\Source\\Repos\\IngSoftwareProject\\Models\\Models.csproj": {
-                "projectPath": "C:\\Users\\Daniele\\Source\\Repos\\IngSoftwareProject\\Models\\Models.csproj"
+              "C:\\Users\\Fabio\\Desktop\\Universita\\Ing. Software\\IngSoftwareProject\\IngSoftwareProject\\Models\\Models.csproj": {
+                "projectPath": "C:\\Users\\Fabio\\Desktop\\Universita\\Ing. Software\\IngSoftwareProject\\IngSoftwareProject\\Models\\Models.csproj"
               },
-              "C:\\Users\\Daniele\\Source\\Repos\\IngSoftwareProject\\Server\\ProgettoIDS.csproj": {
-                "projectPath": "C:\\Users\\Daniele\\Source\\Repos\\IngSoftwareProject\\Server\\ProgettoIDS.csproj"
+              "C:\\Users\\Fabio\\Desktop\\Universita\\Ing. Software\\IngSoftwareProject\\IngSoftwareProject\\Server\\ProgettoIDS.csproj": {
+                "projectPath": "C:\\Users\\Fabio\\Desktop\\Universita\\Ing. Software\\IngSoftwareProject\\IngSoftwareProject\\Server\\ProgettoIDS.csproj"
               }
             }
           }
@@ -133,21 +133,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Daniele\\Source\\Repos\\IngSoftwareProject\\Server\\ProgettoIDS.csproj": {
+    "C:\\Users\\Fabio\\Desktop\\Universita\\Ing. Software\\IngSoftwareProject\\IngSoftwareProject\\Server\\ProgettoIDS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Daniele\\Source\\Repos\\IngSoftwareProject\\Server\\ProgettoIDS.csproj",
+        "projectUniqueName": "C:\\Users\\Fabio\\Desktop\\Universita\\Ing. Software\\IngSoftwareProject\\IngSoftwareProject\\Server\\ProgettoIDS.csproj",
         "projectName": "ProgettoIDS",
-        "projectPath": "C:\\Users\\Daniele\\Source\\Repos\\IngSoftwareProject\\Server\\ProgettoIDS.csproj",
-        "packagesPath": "C:\\Users\\Daniele\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Daniele\\Source\\Repos\\IngSoftwareProject\\Server\\obj\\",
+        "projectPath": "C:\\Users\\Fabio\\Desktop\\Universita\\Ing. Software\\IngSoftwareProject\\IngSoftwareProject\\Server\\ProgettoIDS.csproj",
+        "packagesPath": "C:\\Users\\Fabio\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Fabio\\Desktop\\Universita\\Ing. Software\\IngSoftwareProject\\IngSoftwareProject\\Server\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Daniele\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Fabio\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -161,8 +161,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Daniele\\Source\\Repos\\IngSoftwareProject\\Models\\Models.csproj": {
-                "projectPath": "C:\\Users\\Daniele\\Source\\Repos\\IngSoftwareProject\\Models\\Models.csproj"
+              "C:\\Users\\Fabio\\Desktop\\Universita\\Ing. Software\\IngSoftwareProject\\IngSoftwareProject\\Models\\Models.csproj": {
+                "projectPath": "C:\\Users\\Fabio\\Desktop\\Universita\\Ing. Software\\IngSoftwareProject\\IngSoftwareProject\\Models\\Models.csproj"
               }
             }
           }
@@ -232,7 +232,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
