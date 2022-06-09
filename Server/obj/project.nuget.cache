@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DLHzTtoSohb9/nK42VFoNiRjEfNmYgMVu5CwfA4JMPP0e1ju2PL3uLlGit04TNpesUNYmqmkjGHNlpJbU3PcnA==",
+  "dgSpecHash": "yYZqc5/YisftXo3jb9uJbwdF8hHNcX63sl72/DZB/tUnwDfO/qmpiHQZh7ALIg+pwbPiSXD1+WGmktyP2CKEZA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Fabio\\Desktop\\Universita\\Ing. Software\\IngSoftwareProject\\IngSoftwareProject\\Server\\ProgettoIDS.csproj",
+  "projectFilePath": "c:\\Users\\Fabio\\Desktop\\Universita\\Ing. Software\\IngSoftwareProject\\IngSoftwareProject\\Server\\ProgettoIDS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Fabio\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Fabio\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
