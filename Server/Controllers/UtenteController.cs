@@ -16,6 +16,13 @@ namespace ProgettoIDS.Controllers
             
         }
 
+        [HttpGet]
+        public async Task<IActionResult> Get()
+        {
+            var utenti = await this.context.Utenti.ToListAsync();
+            return Ok(utenti);
+        }
+
         [HttpPost]
         public async Task<IActionResult> Post(Utente utente)
         {

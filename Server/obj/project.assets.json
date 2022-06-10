@@ -1724,11 +1724,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Fabio\\Desktop\\Universita\\Ing. Software\\IngSoftwareProject\\IngSoftwareProject\\Server\\ProgettoIDS.csproj",
+      "projectUniqueName": "C:\\Users\\Fabio\\Desktop\\Universita\\Ing. Software\\IngSoftwareProject\\IngSoftwareProject\\Server\\ProgettoIDS.csproj",
       "projectName": "ProgettoIDS",
-      "projectPath": "c:\\Users\\Fabio\\Desktop\\Universita\\Ing. Software\\IngSoftwareProject\\IngSoftwareProject\\Server\\ProgettoIDS.csproj",
+      "projectPath": "C:\\Users\\Fabio\\Desktop\\Universita\\Ing. Software\\IngSoftwareProject\\IngSoftwareProject\\Server\\ProgettoIDS.csproj",
       "packagesPath": "C:\\Users\\Fabio\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Fabio\\Desktop\\Universita\\Ing. Software\\IngSoftwareProject\\IngSoftwareProject\\Server\\obj\\",
+      "outputPath": "C:\\Users\\Fabio\\Desktop\\Universita\\Ing. Software\\IngSoftwareProject\\IngSoftwareProject\\Server\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Fabio\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1745,8 +1745,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "c:\\Users\\Fabio\\Desktop\\Universita\\Ing. Software\\IngSoftwareProject\\IngSoftwareProject\\Models\\Models.csproj": {
-              "projectPath": "c:\\Users\\Fabio\\Desktop\\Universita\\Ing. Software\\IngSoftwareProject\\IngSoftwareProject\\Models\\Models.csproj"
+            "C:\\Users\\Fabio\\Desktop\\Universita\\Ing. Software\\IngSoftwareProject\\IngSoftwareProject\\Models\\Models.csproj": {
+              "projectPath": "C:\\Users\\Fabio\\Desktop\\Universita\\Ing. Software\\IngSoftwareProject\\IngSoftwareProject\\Models\\Models.csproj"
             }
           }
         }

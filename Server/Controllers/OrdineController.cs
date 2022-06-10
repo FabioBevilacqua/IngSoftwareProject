@@ -24,8 +24,16 @@ namespace ProgettoIDS.Controllers
         [HttpPost("CreateOrder")]
         public async Task<IActionResult> CreateOrder(int idUtente)
         {
+
             try
             {
+                // verificare che l utente esista
+                var utenteDaCercare = await this.context.Utenti.FirstAsync(item => item.Id == idUtente);
+                if (utenteDaCercare == null)
+                {
+                    return BadRequest("Ordine non creabile, in quanto utente inesistente");
+                }
+
                 await this.context.Database.BeginTransactionAsync();
                 var ordine = new Ordine { IdUtente = idUtente, Created_At = DateTime.Now, OrdineProdotto = new List<OrdineProdotto>() };
                 var nuovoOrdine = await context.Ordini.AddAsync(ordine);

@@ -5286,11 +5286,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Fabio\\Desktop\\Universita\\Ing. Software\\IngSoftwareProject\\IngSoftwareProject\\ProgettoIDS.test\\ProgettoIDS.test.csproj",
+      "projectUniqueName": "C:\\Users\\Fabio\\Desktop\\Universita\\Ing. Software\\IngSoftwareProject\\IngSoftwareProject\\ProgettoIDS.test\\ProgettoIDS.test.csproj",
       "projectName": "ProgettoIDS.test",
-      "projectPath": "c:\\Users\\Fabio\\Desktop\\Universita\\Ing. Software\\IngSoftwareProject\\IngSoftwareProject\\ProgettoIDS.test\\ProgettoIDS.test.csproj",
+      "projectPath": "C:\\Users\\Fabio\\Desktop\\Universita\\Ing. Software\\IngSoftwareProject\\IngSoftwareProject\\ProgettoIDS.test\\ProgettoIDS.test.csproj",
       "packagesPath": "C:\\Users\\Fabio\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Fabio\\Desktop\\Universita\\Ing. Software\\IngSoftwareProject\\IngSoftwareProject\\ProgettoIDS.test\\obj\\",
+      "outputPath": "C:\\Users\\Fabio\\Desktop\\Universita\\Ing. Software\\IngSoftwareProject\\IngSoftwareProject\\ProgettoIDS.test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Fabio\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5307,11 +5307,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "c:\\Users\\Fabio\\Desktop\\Universita\\Ing. Software\\IngSoftwareProject\\IngSoftwareProject\\Models\\Models.csproj": {
-              "projectPath": "c:\\Users\\Fabio\\Desktop\\Universita\\Ing. Software\\IngSoftwareProject\\IngSoftwareProject\\Models\\Models.csproj"
+            "C:\\Users\\Fabio\\Desktop\\Universita\\Ing. Software\\IngSoftwareProject\\IngSoftwareProject\\Models\\Models.csproj": {
+              "projectPath": "C:\\Users\\Fabio\\Desktop\\Universita\\Ing. Software\\IngSoftwareProject\\IngSoftwareProject\\Models\\Models.csproj"
             },
-            "c:\\Users\\Fabio\\Desktop\\Universita\\Ing. Software\\IngSoftwareProject\\IngSoftwareProject\\Server\\ProgettoIDS.csproj": {
-              "projectPath": "c:\\Users\\Fabio\\Desktop\\Universita\\Ing. Software\\IngSoftwareProject\\IngSoftwareProject\\Server\\ProgettoIDS.csproj"
+            "C:\\Users\\Fabio\\Desktop\\Universita\\Ing. Software\\IngSoftwareProject\\IngSoftwareProject\\Server\\ProgettoIDS.csproj": {
+              "projectPath": "C:\\Users\\Fabio\\Desktop\\Universita\\Ing. Software\\IngSoftwareProject\\IngSoftwareProject\\Server\\ProgettoIDS.csproj"
             }
           }
         }
