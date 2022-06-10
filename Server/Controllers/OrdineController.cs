@@ -17,8 +17,15 @@ namespace ProgettoIDS.Controllers
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            var prodotti = await context.Ordini.Include(item => item.OrdineProdotto).Where(item => item.Deleted_At == null).ToListAsync();
-            return Ok(prodotti);
+            var ordini = await context.Ordini.Where(item => item.Deleted_At == null).ToListAsync();
+            if (ordini.Count > 0)
+            {
+                foreach (var ordine in ordini)
+                {
+                    ordine.OrdineProdotto = await this.context.OrdineProdotto.Where(item => item.IdOrdine == ordine.Id).ToListAsync();
+                }
+            }
+            return Ok(ordini);
         }
 
         [HttpPost("CreateOrder")]
