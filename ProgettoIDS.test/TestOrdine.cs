@@ -36,16 +36,16 @@ namespace ProgettoIDS.test
         [Test]
         public async Task TestCreateOrder()
         {
-            var response = await this.httpClient.PostAsync("api/Ordine?idUtente=1", null);
+            var response = await this.httpClient.PostAsync("api/Ordine?idUtente=2", null);
             Assert.AreEqual(HttpStatusCode.OK, response.StatusCode);
         }
 
-        //[Test]
-        //public async Task TestAppProductOrder()
-        //{
-        //    var response = await this.httpClient.PutAsync("api/Ordine/AddProductToOrder?id=1&idProdotto=0",null);
-        //    Assert.AreEqual(HttpStatusCode.BadRequest, response.StatusCode);
-        //}
+        [Test]
+        public async Task TestAppProductOrder()
+        {
+            var response = await this.httpClient.PutAsync("api/Ordine/AddProductToOrder?id=1&idProdotto=0", null);
+            Assert.AreEqual(HttpStatusCode.BadRequest, response.StatusCode);
+        }
 
         //[Test]
         //public async Task TestDeleteOrder()
