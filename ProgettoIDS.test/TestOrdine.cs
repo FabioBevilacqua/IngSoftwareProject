@@ -29,7 +29,7 @@ namespace ProgettoIDS.test
         [Test, Order(1)]
         public async Task TestCreateOrderUtenteInesistente()
         {
-            var response = await this.httpClient.PostAsync("api/Ordine/CreateOrder?idUtente=0", null);
+            var response = await this.httpClient.PostAsync("api/Ordine/CreateOrder?idUtente=-1", null);
             Assert.AreEqual(HttpStatusCode.BadRequest, response.StatusCode);
         }
 

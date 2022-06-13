@@ -34,6 +34,8 @@ namespace ProgettoIDS.Controllers
 
             try
             {
+                await this.context.Database.BeginTransactionAsync();
+
                 // verificare che l utente esista
                 var utenteDaCercare = await this.context.Utenti.FirstOrDefaultAsync(item => item.Id == idUtente);
                 if (utenteDaCercare == null)
@@ -41,7 +43,6 @@ namespace ProgettoIDS.Controllers
                     return BadRequest("Ordine non creabile, in quanto utente inesistente");
                 }
 
-                await this.context.Database.BeginTransactionAsync();
                 var ordine = new Ordine { IdUtente = idUtente, Created_At = DateTime.Now, OrdineProdotto = new List<OrdineProdotto>() };
                 var nuovoOrdine = await context.Ordini.AddAsync(ordine);
                 await this.context.SaveChangesAsync();
