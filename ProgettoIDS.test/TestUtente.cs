@@ -23,15 +23,28 @@ namespace ProgettoIDS.test
             this.httpClient.BaseAddress = new System.Uri(this.base_address);
         }
 
-        [Test, Order(0)]
+        [Test, Order(1)]
         public async Task CreateUtente()
+        {
+            var utente = new Utente();
+            utente.Username = $"fabio{DateTime.Now.ToUniversalTime()}@l.it";
+            utente.Username = utente.Username.Replace("/","");
+            utente.Username = utente.Username.Replace(" ","");
+            var json = JsonConvert.SerializeObject(utente);
+            var utenteContentHttp = new StringContent(json, Encoding.UTF8, "application/json");
+            var response = await this.httpClient.PostAsync("api/Utente", utenteContentHttp);
+            Assert.AreEqual(HttpStatusCode.OK, response.StatusCode);
+        }
+
+        [Test, Order(0)]
+        public async Task CreateUtenteGiàEsistente() //Caso di test in cui l'utente già esiste
         {
             var utente = new Utente();
             utente.Username = "fabio87@live.it";
             var json = JsonConvert.SerializeObject(utente);
             var utenteContentHttp = new StringContent(json, Encoding.UTF8, "application/json");
             var response = await this.httpClient.PostAsync("api/Utente", utenteContentHttp);
-            Assert.AreEqual(HttpStatusCode.OK, response.StatusCode);
+            Assert.AreEqual(HttpStatusCode.InternalServerError, response.StatusCode);
         }
     }
 }

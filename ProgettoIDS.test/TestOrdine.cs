@@ -18,7 +18,7 @@ namespace ProgettoIDS.test
             this.httpClient.BaseAddress = new System.Uri(this.base_address);
         }
 
-        [Test]
+        [Test, Order(0)]
         public async Task TestGetOrder()
         {
             var response = await this.httpClient.GetAsync("api/Ordine");
@@ -26,25 +26,25 @@ namespace ProgettoIDS.test
 
         }
 
-        [Test]
+        [Test, Order(1)]
         public async Task TestCreateOrderUtenteInesistente()
         {
-            var response = await this.httpClient.PostAsync("api/Ordine?idUtente=0", null);
+            var response = await this.httpClient.PostAsync("api/Ordine/CreateOrder?idUtente=0", null);
             Assert.AreEqual(HttpStatusCode.BadRequest, response.StatusCode);
         }
 
-        [Test]
+        [Test, Order(2)]
         public async Task TestCreateOrder()
         {
-            var response = await this.httpClient.PostAsync("api/Ordine?idUtente=2", null);
+            var response = await this.httpClient.PostAsync("api/Ordine/CreateOrder?idUtente=1", null);
             Assert.AreEqual(HttpStatusCode.OK, response.StatusCode);
         }
 
-        [Test]
+        [Test, Order(3)]
         public async Task TestAppProductOrder()
         {
-            var response = await this.httpClient.PutAsync("api/Ordine/AddProductToOrder?id=1&idProdotto=0", null);
-            Assert.AreEqual(HttpStatusCode.BadRequest, response.StatusCode);
+            var response = await this.httpClient.PutAsync("api/Ordine/AddProductToOrder?id=1&idProdotto=1", null);
+            Assert.AreEqual(HttpStatusCode.OK, response.StatusCode);
         }
 
         //[Test]
