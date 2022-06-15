@@ -51,7 +51,7 @@ namespace ProgettoIDS.test
         [Test, Order(3)]
         public async Task TestAppProductOrder()
         {
-            var response = await this.httpClient.PutAsync("api/Ordine/AddProductToOrder?id=1&idProdotto=1", null);
+            var response = await this.httpClient.PutAsync("api/Ordine/AddProductToOrder?id=2&idProdotto=2", null);
             Assert.AreEqual(HttpStatusCode.OK, response.StatusCode);
         }
 

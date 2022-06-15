@@ -98,7 +98,7 @@ namespace ProgettoIDS.test
         [Test]
         public async Task TestParametroValido()
         {
-            var response = await this.httpClient.GetAsync("api/prodotto/GetById?id=1");
+            var response = await this.httpClient.GetAsync("api/prodotto/GetById?id=2");
             Assert.AreEqual(HttpStatusCode.OK, response.StatusCode);
         }
     }
