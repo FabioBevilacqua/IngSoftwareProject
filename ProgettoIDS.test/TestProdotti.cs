@@ -54,16 +54,7 @@ namespace ProgettoIDS.test
             Assert.AreEqual(HttpStatusCode.BadRequest, response.StatusCode);
         }
 
-        [Test]
-        public async Task TestCreazioneProdottoDeletedAt()
-        {
-            var prodotto = this.getProdottoTest();
-            prodotto.Deleted_At = DateTime.Now;
-            var json = JsonConvert.SerializeObject(prodotto);
-            var data = new StringContent(json, Encoding.UTF8, "application/json");
-            var response = await this.httpClient.PostAsync("api/prodotto", data);
-            Assert.AreEqual(HttpStatusCode.BadRequest, response.StatusCode);
-        }
+
 
         [Test]
         public async Task TestPrezzoNonValidoMax()
@@ -96,7 +87,7 @@ namespace ProgettoIDS.test
 
 
         [Test]
-        public async Task TestParametroValido()
+        public async Task TestProdottoEsistente()
         {
             var response = await this.httpClient.GetAsync("api/prodotto/GetById?id=2");
             Assert.AreEqual(HttpStatusCode.OK, response.StatusCode);
