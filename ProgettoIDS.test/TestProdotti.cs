@@ -44,6 +44,50 @@ namespace ProgettoIDS.test
         }
 
         [Test]
+        public async Task TestQuantit‡NonValida()
+        {
+            var prodotto = this.getProdottoTest();
+            prodotto.Quantita = 101;
+            var json = JsonConvert.SerializeObject(prodotto);
+            var data = new StringContent(json, Encoding.UTF8, "application/json");
+            var response = await this.httpClient.PostAsync("api/prodotto", data);
+            Assert.AreEqual(HttpStatusCode.BadRequest, response.StatusCode);
+        }
+
+        [Test]
+        public async Task TestCreazioneProdottoDeletedAt()
+        {
+            var prodotto = this.getProdottoTest();
+            prodotto.Deleted_At = DateTime.Now;
+            var json = JsonConvert.SerializeObject(prodotto);
+            var data = new StringContent(json, Encoding.UTF8, "application/json");
+            var response = await this.httpClient.PostAsync("api/prodotto", data);
+            Assert.AreEqual(HttpStatusCode.BadRequest, response.StatusCode);
+        }
+
+        [Test]
+        public async Task TestPrezzoNonValidoMax()
+        {
+            var prodotto = this.getProdottoTest();
+            prodotto.Prezzo = 1500;
+            var json = JsonConvert.SerializeObject(prodotto);
+            var data = new StringContent(json, Encoding.UTF8, "application/json");
+            var response = await this.httpClient.PostAsync("api/prodotto", data);
+            Assert.AreEqual(HttpStatusCode.BadRequest, response.StatusCode);
+        }
+
+        [Test]
+        public async Task TestPrezzoNonValidoMin()
+        {
+            var prodotto = this.getProdottoTest();
+            prodotto.Prezzo = 0;
+            var json = JsonConvert.SerializeObject(prodotto);
+            var data = new StringContent(json, Encoding.UTF8, "application/json");
+            var response = await this.httpClient.PostAsync("api/prodotto", data);
+            Assert.AreEqual(HttpStatusCode.BadRequest, response.StatusCode);
+        }
+
+        [Test]
         public async Task TestParametroNonValido()
         {
             var response = await this.httpClient.GetAsync("api/prodotto/GetById?id=-1");

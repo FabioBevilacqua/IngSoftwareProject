@@ -35,7 +35,30 @@ namespace ProgettoIDS.test
             var response = await this.httpClient.PostAsync("api/Utente", utenteContentHttp);
             Assert.AreEqual(HttpStatusCode.OK, response.StatusCode);
         }
+        [Test, Order(2)]
+        public async Task CreateUtenteUsernameMin()
+        {
+            var utente = new Utente();
+            utente.Username = $"fabio{DateTime.Now.ToUniversalTime()}@l.it";
+            utente.Username = utente.Username.Substring(0,4);
+            var json = JsonConvert.SerializeObject(utente);
+            var utenteContentHttp = new StringContent(json, Encoding.UTF8, "application/json");
+            var response = await this.httpClient.PostAsync("api/Utente", utenteContentHttp);
+            Assert.AreEqual(HttpStatusCode.BadRequest, response.StatusCode);
+        }
 
+        [Test, Order(3)]
+        public async Task CreateUtenteUsernameMax()
+        {
+            var utente = new Utente();
+            string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+            utente.Username = new string(Enumerable.Repeat(chars, 32).Select(s => s[new Random().Next(s.Length)]).ToArray());
+            
+            var json = JsonConvert.SerializeObject(utente);
+            var utenteContentHttp = new StringContent(json, Encoding.UTF8, "application/json");
+            var response = await this.httpClient.PostAsync("api/Utente", utenteContentHttp);
+            Assert.AreEqual(HttpStatusCode.BadRequest, response.StatusCode);
+        }
         [Test, Order(0)]
         public async Task CreateUtenteGiàEsistente() //Caso di test in cui l'utente già esiste
         {

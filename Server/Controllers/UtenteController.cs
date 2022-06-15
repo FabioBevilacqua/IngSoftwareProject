@@ -36,7 +36,14 @@ namespace ProgettoIDS.Controllers
                 {
                     throw new Exception("Attenzione, username già esistente");
                 }
-
+                if(utente.Username.Length < 5)
+                {
+                    return StatusCode(400, "Attenzione, la username deve contenere almeno 5 caratteri");
+                }
+                if (utente.Username.Length > 30)
+                {
+                    return StatusCode(400, "Attenzione, la username non può superare i 30 caratteri");
+                }
                 await context.Utenti.AddAsync(utente); //Aggiungo
                 await context.SaveChangesAsync(); //Scrivo sul database
 

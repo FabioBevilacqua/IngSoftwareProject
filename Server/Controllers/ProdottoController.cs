@@ -54,9 +54,21 @@ public class ProdottoController : ControllerBase
         {
             return StatusCode(400,"Attenzione, la quantit� non pu� essere uguale o minore di 0");
         }
+        if (prodotto.Quantita > 100)
+        {
+            return StatusCode(400, "Attenzione, la quantit� non pu� essere maggiore di 100");
+        }
+        if(prodotto.Prezzo > 1000)
+        {
+            return StatusCode(400, "Attenzione, il prezzo non pu� superare i 1000 euro");
+        }
+        if (prodotto.Prezzo <= 0)
+        {
+            return StatusCode(400, "Attenzione, il prezzo non può essere minore o uguale a 0");
+        }
         if (prodotto.Deleted_At != null)
         {
-            return StatusCode(400,"Attenzione, non � possibile salvare ed elimnare contestualmente un prodotto ");
+            return StatusCode(400,"Attenzione, non � possibile salvare ed elimnare contestualmente un prodotto");
         }
         try
         {
